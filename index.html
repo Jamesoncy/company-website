@@ -15,7 +15,6 @@
                 <li class = "collapse"><a href = "#">Services</a></li>
                 <li class = "collapse"><a href = "#">About</a></li>
                 <li class = "collapse"><a href = "#">Contact Us</a></li>
-                
             </ul>
         </nav>
         <section id = "main">
@@ -170,10 +169,20 @@
             var items = document.getElementsByClassName('collapse'),
               length = items.length,
               last = (items[length - 1].style.display).trim(),
-              display = (last === 'none' || last === '') ? 'block' : 'none';
+              display, transition = ''
+
+              if (last === 'none' || last === '')  {
+                  display = 'block';
+                  transition = 'transition: visibility 0s, opacity 0.5s linear;'
+              }
+              else {
+                  display = 'none';
+                  transition = '';
+              }
 
             for (var i = 0; i < length; i++) {
                 items[i].style.display = display;
+                items[i].style.transition = transition;
             }
         }
     </script>

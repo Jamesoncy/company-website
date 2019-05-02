@@ -25,20 +25,18 @@ nav ul {
     padding: 0;
 }
 
+nav ul .collapse, #collapse {
+    margin: 0;
+    padding: 16px;
+    text-align: right;
+    border: 2px solid black;
+    border-bottom: 0px;
+}
+
 nav ul .collapse {
     display: none;
 }
 
-#collapse {
-    display: inline-block;
-}
-
-nav ul li {
-    margin: 0;
-    padding: 16px;
-    text-align:  right;
-    border: 2px solid black;
-}
 
 nav ul li a {
     text-decoration: none;
