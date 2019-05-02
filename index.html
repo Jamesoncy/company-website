@@ -10,10 +10,12 @@
     <body>
         <nav>
             <ul id = "nav-list">
-                <li><a href = "#">Home</a></li>
-                <li><a href = "#">Services</a></li>
-                <li><a href = "#">About</a></li>
-                <li><a href = "#">Contact Us</a></li>
+                <li id = "collapse"><a href = "#"><i class="fas fa-bars"></i></a></li>
+                <li class = "collapse"><a href = "#">Home</a></li>
+                <li class = "collapse"><a href = "#">Services</a></li>
+                <li class = "collapse"><a href = "#">About</a></li>
+                <li class = "collapse"><a href = "#">Contact Us</a></li>
+                
             </ul>
         </nav>
         <section id = "main">
@@ -162,5 +164,18 @@
                 <a href = "#">James</a>
             </div>
         </footer>
+    <script>
+        var collapsible = document.getElementById('collapse');
+        collapsible.onclick = function () {
+            var items = document.getElementsByClassName('collapse'),
+              length = items.length,
+              last = (items[length - 1].style.display).trim(),
+              display = (last === 'none' || last === '') ? 'block' : 'none';
+
+            for (var i = 0; i < length; i++) {
+                items[i].style.display = display;
+            }
+        }
+    </script>
     </body>
 </html>

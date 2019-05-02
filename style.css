@@ -25,10 +25,18 @@ nav ul {
     padding: 0;
 }
 
+nav ul .collapse {
+    display: none;
+}
+
+#collapse {
+    display: inline-block;
+}
+
 nav ul li {
     margin: 0;
     padding: 16px;
-    text-align:  center;
+    text-align:  right;
     border: 2px solid black;
 }
 
@@ -193,5 +201,13 @@ footer #logo {
         box-shadow: 5px 10px red;
         margin-right: 20px;
         margin-bottom: 10px;
+    }
+
+    nav ul .collapse {
+        display: inline-block;
+    }
+
+    #collapse {
+        display: none;
     }
 }
