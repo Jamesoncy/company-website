@@ -1,0 +1,197 @@
+html, body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    color: white;
+}
+
+html #testimonials {
+    color: black;
+}
+
+nav {
+    position: relative;
+    background-color: green;
+    width: 100%;
+    color: white;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 16px;
+    text-align:  center;
+    border: 2px solid black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: yellow !important;
+    transition: background-color 0.5s ease;
+}
+
+#main {
+    background: linear-gradient(to right, rgba(99, 99, 99, 0.5) , rgba(162, 171, 88, 0.6), rgba(103, 233, 75, 0.3)), url(./images/evgeni-evgeniev-454219-unsplash.jpg);
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#main h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#main p {
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+    font-weight: bold;
+}
+
+#testimonials, #showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+#showcase {
+    color: black;
+    margin-top: 50px;
+}
+
+#showcase .cards {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.cards .card-image {
+    height: 350px;
+    width: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.cards 
+.card-image 
+,.card-title, .card-desc, .button {
+    margin: 10px;
+}
+
+.cards .button {
+    text-align: right;
+}
+
+.cards .button a {
+    background-color: grey;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.cards .card-image img {
+    height: 100%;
+    width: 100%;
+}
+
+#testimonials p {
+    text-align: center;
+}
+
+.customer {
+    border: 2px solid black;
+    border-radius: 100px;
+    box-shadow: 5px 10px red;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.customer:hover, .cards:hover {
+    box-shadow: 0px 0px 25px;
+}
+
+.customer img {
+    margin: 10px;
+}
+
+footer { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    margin-top: 50px;
+    background-color: skyblue;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+footer #logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+        border: 0;
+    }
+
+    .customer {
+        border: 2px solid black;
+        border-radius: 100px;
+        box-shadow: 5px 10px red;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
